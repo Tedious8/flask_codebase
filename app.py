@@ -10,6 +10,7 @@ DEBUG = True
 PORT = 5000
 
 # Every route need to use @app.route to define the path for specific URL followed by a function
+# E.g., http://127.0.0.1:5000
 @app.route('/')
 def index():
     # If you go to 127.0.0.1:PORT and see this, it means the app is working
@@ -20,6 +21,7 @@ def index():
     })
 
 # If you go to 127.0.0.1:PORT/task_1?courseName=courseName and see this, it means this task is working
+# E.g., http://127.0.0.1:5000/task_1?courseName=Statistic
 @app.route('/task_1', methods=['GET'])
 def task_1():
     # Get the parameter for courseName
@@ -44,6 +46,8 @@ def task_1():
         }
     })
 
+# If you go to 127.0.0.1:PORT/task_2?schoolName=schoolName and see this, it means this task is working
+# E.g., http://127.0.0.1:5000/task_2?schoolName=NTHU
 @app.route('/task_2', methods=['GET'])
 def task_2():
     # Get the parameter for schoolName
