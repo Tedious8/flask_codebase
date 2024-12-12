@@ -25,16 +25,16 @@ def task_1():
     # Get the parameter for courseName
     courseName = request.args.get('courseName')
 
-    '''
-    TODO
-    '''
-
     if courseName is None:
         return jsonify({
             'status': 400,
             'message': 'Bad request',
             'data': {}
         })
+
+    '''
+    TODO
+    '''
 
     return jsonify({
         'status': 200,
@@ -49,16 +49,16 @@ def task_2():
     # Get the parameter for schoolName
     schoolName = request.args.get('schoolName')
 
-    '''
-    TODO
-    '''
-
     if schoolName is None:
         return jsonify({
             'status': 400,
             'message': 'Bad request',
             'data': {}
         })
+
+    '''
+    TODO
+    '''
 
     return jsonify({
         'status': 200,
